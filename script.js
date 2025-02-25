@@ -1,19 +1,19 @@
 // Function to add click listeners
 function setupClickListeners() {
     document.getElementById('c1').onclick = function() {
-        window.location.href = 'page1.html'; // Redirect to Page 1
+        window.location.href = 'technology.html'; // Redirect to Page 1
     };
     document.getElementById('c2').onclick = function() {
-        window.location.href = 'page2.html'; // Redirect to Page 2
+        window.location.href = 'environmental.html'; // Redirect to Page 2
     };
     document.getElementById('c3').onclick = function() {
-        window.location.href = 'page3.html'; // Redirect to Page 3
+        window.location.href = 'social-impact.html'; // Redirect to Page 3
     };
     document.getElementById('c4').onclick = function() {
-        window.location.href = 'page4.html'; // Redirect to Page 4
+        window.location.href = 'creative-design.html'; // Redirect to Page 4
     };
     document.getElementById('c5').onclick = function() {
-        window.location.href = 'page5.html'; // Redirect to Page 5
+        window.location.href = 'gaming-entertainment.html'; // Redirect to Page 5
     };
 }
 

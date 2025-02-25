@@ -132,9 +132,7 @@ body{
 }
 
 #focus_img {
-    animation: slideright linear;
-    animation-timeline: view();
-    animation-range: entry 0% cover 40%;
+    animation: slideright 1s ease-out;
     border-radius: 20px;
     margin-left: 800px;
     margin-top: -480px;
