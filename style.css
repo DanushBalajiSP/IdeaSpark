@@ -1,0 +1,276 @@
+* {
+    margin: 0px;
+    background-color: azure;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+@keyframes slideup {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes slidedown {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes slideright {
+    0% {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+body{
+    display: inline-block;
+}
+.shadow {
+    position: fixed;
+    width: 100%;
+    height: 30px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), transparent);
+    z-index: 999;
+}
+
+/*Header Part*/
+.branding, ul, li {
+    background-color: white;
+    display: inline-block;
+}
+.branding {
+    animation: slidedown 1s ease-out;
+    position: fixed;
+    background-color: white;
+    border-radius: 20px;
+    margin: 20px 0px 0px 50px;
+    width: 1390px;
+    top: 0;
+    left: 0;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.25);
+    padding: 20px;
+    z-index: 1000;
+}
+#logo {
+    margin-bottom: -13px;
+    margin-right: 10px;
+    background-color: transparent;
+    width: 40px;
+    height: 40px;
+}
+#brand {
+    background-color: transparent;
+    font-family: system-ui;
+}
+#head_quota > li:last-child {
+    margin-left: 580px;
+}
+.options a {
+    text-decoration: none;
+    background-color: transparent;
+    color: black;
+    font-size: 0.2in;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 50px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.options a:hover {
+    color: rgb(193, 153, 232);
+    cursor: pointer;
+}
+
+/*Focusing Area*/
+.focus {
+    animation: slideright 1s ease-out;
+    display: inline-block;
+    margin: 300px 0px 0px 130px;
+}
+.focus h1{
+    font-size: 70px;
+    font-family: 'system-ui';
+}
+.focus p {
+    margin-top: 20px;
+    font-size: 20px;
+    font-family: 'Trebuchet MS';
+    width: 400px;
+    overflow-wrap: break-word;
+}
+.focus img{
+    animation: slideright 1s ease-out;
+    background-color: transparent;
+    margin: 0px 10px -5px -10px;
+    width: 20px;
+    height: 20px;
+}
+.focus button {
+    margin-top: 80px;
+    width: 200px;
+    height: 50px;
+    border-radius: 20px;
+    transition: background-color 0.3s, box-shadow 0.3s, scale 0.5s;
+}
+.focus button:hover {
+    scale: 110%;
+    background-color: rgb(193, 153, 232);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.25);
+}
+
+#focus_img {
+    animation: slideright linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+    border-radius: 20px;
+    margin-left: 800px;
+    margin-top: -480px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.25);
+    transition: scale 0.3s, box-shadow 0.4s;
+}
+#focus_img:hover {
+    scale: 110%;
+    box-shadow: 20px 20px 10px rgba(0, 0, 0, 0.25);
+}
+
+/*Section 2*/
+.sec2 h2, .sec2 h1{
+    animation: slideright linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+    font-family: 'Trebuchet MS';
+}
+.note {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 15px;
+    background-color: black;
+    color: white;
+    border-radius: 0px 20px 0px 0px;
+    margin: 200px 0px 0px 80px;
+}
+.sec2 h1{
+    font-size: 50px;
+    margin: 20px 0px 100px 80px;
+}
+/*Contents*/
+#c1:hover,#c2:hover,#c3:hover,#c4:hover,#c5:hover{
+    background-color: white;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+}
+#c1,#c2,#c3,#c4,#c5{
+    animation: slidedown ease;
+    animation-timeline: view();
+    animation-range: entry 0% cover 10%;
+    margin: 0px -50px 50px 80px;
+    width: 1400px;
+    height: 150px;
+    padding: 10px 10px;
+    border-radius: 20px 0px 20px 0px;
+    background-color: rgb(193, 153, 232);
+    transition: background-color 0.3s ease, box-shadow 0.4s ease;
+}
+.count {
+    display: inline-block;
+    background-color: transparent;
+    line-height: 120px;
+    text-align: center;
+    font-size: 50px;
+    font-family: monospace;
+}
+.content {
+    margin-left: 30px;
+    width: 1200px;
+    display: inline-block;
+    animation: slideright linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+    background-color: transparent;
+    font-size: 20px;
+}
+.content h2 {
+    margin: 0px 150px;
+    background-color: transparent;
+}
+.content p {
+    margin: 10px 0px 0px 250px;
+    background-color: transparent;
+}
+/*Finalize*/
+.sec3 {
+    margin-top: 250px;
+    width: 100%;
+    height: 300px;
+    background-color: darkmagenta;
+}
+.card {
+    animation: slideup linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
+    padding: 20px;
+    border-radius: 20px;
+    width: 50%;
+    height: 350px;
+    margin: -450px 0px 0px 370px;
+}
+.menu ul, .contect ul, .social ul {
+    background-color: transparent;
+    padding: 0px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.menu li, .contect li, .social li {
+    margin-top: 15px;
+    font-family: monospace;
+    font-size: 20px;
+    font-weight: bold;
+}
+.menu h1, .contect h1, .social h1 {
+    background-color: transparent;
+    font-family: monospace;
+    font-size: 40px;
+    font-weight: bold;
+}
+.menu a{
+    text-decoration: none;
+    color: black;
+}
+.menu {
+    display: inline;
+    background-color: transparent;
+    flex: 1;
+    text-align: center;
+    align-items: left;
+}
+.contect {
+    display: inline;
+    background-color: transparent;
+    flex: 1;
+    text-align: center;
+    align-items: center;
+}
+.social {
+    display: inline;
+    background-color: transparent;
+    flex: 1;
+    text-align: center;
+    align-items: right;
+}

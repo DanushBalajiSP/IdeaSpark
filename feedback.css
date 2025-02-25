@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+html {
+    height: 100%;
+}
+@keyframes slideup {
+    0% {
+        opacity: 0.5;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes slideright {
+    0% {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+body {
+    height: 100%;
+    background: url("background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    animation: slideup 1s ease-out;
+    transition: scale 0.5s ease-in-out, box-shadow 0.7s ease-in-out;
+     height: 430px;
+     width: 850px;
+     padding: 30px 50px;
+     border-radius: 50px;
+     background-color: rgba(255, 255, 255, 0.082);
+     backdrop-filter: blur(10px);
+     border-top: 1px solid whitesmoke;
+     border-left: 1px solid whitesmoke;
+     box-shadow: 8px 8px 5px rgba(0, 0, 0, 0.082);
+
+     display: flex;
+     justify-content: flex-start;
+     align-items: center;
+     flex-direction: column;
+
+     color: whitesmoke;
+     font-family: sans-serif;
+     text-align: justify;
+     line-height: 185%;
+}
+
+textarea {
+    font-size: 16px;
+    resize: none;
+    background-color: rgba(255, 255, 255, 0.082);
+     backdrop-filter: blur(10px);
+     border-top: 1px solid whitesmoke;
+     border-left: 1px solid whitesmoke;
+     box-shadow: 8px 8px 5px rgba(0, 0, 0, 0.082);
+    padding: 20px;
+    border-radius: 30px;
+    width: 80%;
+    margin-top: 50px;
+    overflow-wrap: break-word;
+}
+textarea:nth-of-type(2) {
+    height: 150px;
+    padding-bottom: 100px; /* Push the placeholder text down */
+    line-height: 1; /* Keep the line height normal */
+    box-sizing: border-box; /* Ensures padding is included in the input's height */
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #f3f1c6;
+    color: #000000;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 13px;
+    margin-top: 50px;
+    transition: background-color 0.3s ease-in, color 0.3s ease-out;
+}
+
+button:hover {
+    background-color: #fb00ff;
+    color: white;
+}
+
+.thank-message {
+    display: none;
+    color: green;
+    font-size: 20px;
+    margin-top: 20px;
+}
+form img {
+    animation: slideright 1s ease-out;
+    background-color: transparent;
+    margin: 0px 10px -5px -10px;
+    width: 20px;
+    height: 20px;
+}
+
+a {
+    width: 100px;
+    margin-top: 10px;
+    background-color: rgba(255, 255, 255, 0.082);
+     backdrop-filter: blur(10px);
+     border-top: 1px solid whitesmoke;
+     border-left: 1px solid whitesmoke;
+     box-shadow: 8px 8px 5px rgba(0, 0, 0, 0.082);
+    text-align: center;
+    text-decoration: none;
+    color: aliceblue;
+    border-radius: 20px;
+    transition: background-color 0.3s, box-shadow 0.3s, scale 0.5s;
+}
