@@ -1,6 +1,6 @@
 # README.md
 
-# Project Title: PathFinder
+# Project Title: ProjectPathFinder
 
 ## Overview
 PathFinder is a web-based platform designed to empower students by providing them with creative and impactful project ideas across various categories. The website serves as a hub for students to explore project ideas in technology, environmental studies, social impact, creative design, and gaming and entertainment.
